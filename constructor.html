@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Course(code, title, creditHours) {
+    this.code = code;
+    this.title = title;
+    this.creditHours = creditHours;
+}
+
+// Create 3 course objects using user input
+let course1 = new Course(
+    prompt("Enter Course 1 Code:"),
+    prompt("Enter Course 1 Title:"),
+    parseInt(prompt("Enter Course 1 Credit Hours:"))
+);
+
+let course2 = new Course(
+    prompt("Enter Course 2 Code:"),
+    prompt("Enter Course 2 Title:"),
+    parseInt(prompt("Enter Course 2 Credit Hours:"))
+);
+
+let course3 = new Course(
+    prompt("Enter Course 3 Code:"),
+    prompt("Enter Course 3 Title:"),
+    parseInt(prompt("Enter Course 3 Credit Hours:"))
+);
+
+// Display course details
+console.log("Course 1:", course1);
+console.log("Course 2:", course2);
+console.log("Course 3:", course3);
+    </script>
+</body>
+</html>
